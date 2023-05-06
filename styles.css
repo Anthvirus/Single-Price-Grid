@@ -1,0 +1,127 @@
+@import url(https://fonts.google.com/specimen/Karla);
+
+body{
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color:  hsl(204, 43%, 93%);
+}
+.main-card{
+    max-width: 40rem;
+    font-family: 'Karla', sans-serif;
+    display: block;
+}
+.second-part{
+    display: flex;
+    box-sizing: border-box;
+    max-width: inherit;
+}
+.intro-box{
+    padding: 1rem 3rem 2rem 3rem;
+    background-color: rgb(250, 251, 252);
+    box-sizing: border-box;
+    max-width: inherit;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.intro-box p{
+    line-height: 1.7rem;
+    margin: 10px 0px 10px 0px;
+    color:  hsl(210, 1%, 43%);
+    font-weight: 400;
+}
+.intro-box h3{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color:  hsl(179, 62%, 43%);
+}
+.intro-box h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:  hsl(71, 73%, 54%);
+    margin: 10px 0px 10px 0px;
+}
+.cta-box{
+    background-color:  hsl(179, 62%, 43%);
+    color:  hsl(204, 43%, 93%);
+    padding: 1.3rem 2.8rem 2.5rem 2.8rem;
+    box-sizing: border-box;
+    min-width: 50%;
+    border-bottom-left-radius: 10px;
+}
+.cta-box p{
+    margin-top: 5px;
+}
+.cta-box .time{
+    color:  hsl(204, 43%, 93%);
+}
+.cta-box .offer{
+    display: flex;
+    height: 2rem;
+}
+.info-box{
+    padding: 1.3rem 2.8rem 2.5rem 2.8rem;
+    background-color:  hsla(179, 62%, 43%, 0.603);
+    color:  hsl(204, 43%, 93%);
+    box-sizing: border-box;
+    min-width: 50%;
+    border-bottom-right-radius: 10px;
+}
+.info-box div{
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+.offer .price{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.offer .time{
+    margin: 5px 0px 0px 15px;
+    color:  hsl(218, 20%, 81%);
+}
+button{
+    border: none;
+    height: 3rem;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px grey;
+    background-color:  hsl(71, 73%, 54%);
+    color:  hsl(204, 43%, 93%);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+button:hover{
+    cursor: pointer;
+    border: 1ps solid hsl(71, 73%, 54%);
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(179, 62%, 43%);
+}
+@media (max-width: 690px) {
+    .main-card{
+        max-width: 80vw;
+    }
+    .second-part{
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+    }
+    .intro-box{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .cta-box{
+        width: 80vw;
+        border-radius: 0;
+    }
+    .info-box{
+        max-width: 80vw;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+}
